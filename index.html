@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pink Messenger 💕</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background-hearts"></div>
+
+<div class="chat-container">
+
+  <div class="top-bar">
+    🌸 Pink Messenger
+  </div>
+
+  <div class="room-select">
+    <input id="roomInput" placeholder="Enter room name 💌">
+    <button onclick="joinRoom()">Join</button>
+  </div>
+
+  <div id="messages"></div>
+
+  <div class="bottom-bar">
+
+    <input id="username" placeholder="Name ✨">
+
+    <input id="messageInput" placeholder="Cute message...">
+
+    <label class="upload-btn">
+      📸
+      <input type="file" id="imageUpload" hidden>
+    </label>
+
+    <button onclick="sendMessage()">💖</button>
+
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
